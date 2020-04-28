@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Formatted History Alias"
+date:   2020-04-28 01:00:23 +0500
+categories: 
+---
+
+Need history command to update readme after setting up environment.
+
+`history` command returns a number and pervious commands. To format it, just use this command:
+
+history 5 | awk '{$1="";print substr($0,2)}'
+
+Just add an alias:
+```
+myhist() {
+  num=${1:-5}
+  history $num | awk '{$1="";print substr($0,2)}'
+}
+```
