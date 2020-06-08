@@ -21,5 +21,5 @@ categories:
   - *Make sure write lock on the card is on, otherwise the card would be in a read-only mode*
 
 - Select the image and the reader
-- Flash
+- Flash with etcher
 ![Flashing](/images/etcher_flashing.png)
