@@ -22,4 +22,4 @@ categories:
 
 - Select the image and the reader
 - Flash
-![Flashing](../images/etcher_flashing.png)
+![Flashing](/images/etcher_flashing.png)
