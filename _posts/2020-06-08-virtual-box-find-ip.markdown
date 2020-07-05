@@ -33,8 +33,12 @@ Should return something like:
 - Install the extension pack
   - `VBoxManage extpack install --replace ~/Downloads/tools/vboxextensionpack/Oracle_VM_VirtualBox_Extension_Pack-5.2.6.vbox-extpack`
 
+- Shutdown:
+  - `vboxmanage controlvm server poweroff`
+- Snapshot:
+  - `vboxmanage snapshot server18 restore server18_withssh`
 - Run the VM:
-  - `VBoxManage startvm server --type headless`
+  - `VBoxManage startvm server18 --type headless`
 
 - Find ip:
   - `VBoxManage guestproperty enumerate server`
